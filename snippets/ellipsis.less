@@ -1,0 +1,14 @@
+.line-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.muti-line-ellipsis(@row: 2){
+  -webkit-line-clamp: @row;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;  
+  white-space: pre-wrap!important;
+}
